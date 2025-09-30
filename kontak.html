@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REKAYASA PRANGKAT LUNAK</title>
+  <style>
+    /* ===== Reset & Global ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #E0F2FE; /* biru muda lembut */
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background-color: #3B82F6; /* biru */
+      color: #fff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-title img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: #fff;
+      padding: 5px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .logo-title img:hover {
+      transform: scale(1.1) rotate(3deg);
+    }
+
+    .logo-title h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav a {
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #dbeafe;
+    }
+
+    /* ===== Main ===== */
+    main {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    article {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    article h2 {
+      font-size: 26px;
+      color: #2563EB;
+      margin-bottom: 15px;
+    }
+
+    article p {
+      font-size: 16px;
+      color: #444;
+    }
+
+    /* ===== Kontak Box ===== */
+    .kontak-box {
+      text-align: left;
+      margin-top: 20px;
+      font-size: 16px;
+      color: #0d1b2a;
+      line-height: 1.8;
+    }
+
+    .kontak-box a {
+      color: #3B82F6;
+      text-decoration: underline;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background-color: #3B82F6;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+    }
+
+    /* ===== Animasi ===== */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* ===== Responsif untuk HP ===== */
+    @media (max-width: 600px) {
+      .logo-title img {
+        width: 45px;
+        height: 45px;
+      }
+      .logo-title h1 {
+        font-size: 18px;
+      }
+      nav ul {
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-title">
+      <img src="ChatGPT_Image_25_Sep_2025__17.48.29-removebg-preview.png" alt="Logo RPL">
+      <h1>REKAYASA PRANGKAT LUNAK</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <article>
+      <h2>Kontak</h2>
+      <p>
+        Website ini dibuat untuk memperkenalkan <b>Kelas 12 Rekayasa Perangkat Lunak</b>.  
+        Temukan informasi tentang profil kelas, galeri kegiatan, dan cara menghubungi kami.
+      </p>
+
+      <div class="kontak-box">
+        <p><b>📍 Alamat:</b> SMK Bhakti Nusantara, Jl. Kaliwungu Km. 1 Meteseh, Kec Boja, Kab Kendal</p>
+        <p><b>📞 Telepon:</b> 0294571476</p>
+        <p><b>📧 Email:</b> rplsmkbhinus.id</p>
+        <p><b>🌐 Instagram:</b> 
+          <a href="https://www.instagram.com/exients12.rpl?igsh=MTJiajd4ZTlnMDRlcA==" target="_blank">@rpl12_smkbn</a>
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kelas 12 Rekayasa Perangkat Lunak | SMK BHAKTI NUSANTARA</p>
+  </footer>
+
+</body>
+</html>

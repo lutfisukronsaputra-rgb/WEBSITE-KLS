@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REKAYASA PRANGKAT LUNAK</title>
+  <style>
+    /* ===== Reset & Global ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #E0F2FE; /* biru muda lembut */
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background-color: #3B82F6; /* biru */
+      color: #fff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-title img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      border-radius: 10px;    /* sudut lembut */
+      background: #fff;       /* latar putih */
+      padding: 5px;           /* spasi dalam */
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2); /* bayangan biar keren */
+      transition: transform 0.3s ease;
+    }
+
+    .logo-title img:hover {
+      transform: scale(1.1) rotate(3deg); /* animasi saat hover */
+    }
+
+    .logo-title h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav a {
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #dbeafe; /* biru lebih terang saat hover */
+    }
+
+    /* ===== Main ===== */
+    main {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    article {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    article h2 {
+      font-size: 26px;
+      color: #2563EB; /* biru medium */
+      margin-bottom: 15px;
+    }
+
+    article p {
+      font-size: 16px;
+      color: #444;
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    }
+
+    .card h3 {
+      color: #3B82F6; /* biru muda */
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background-color: #3B82F6;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+    }
+
+    /* ===== Animasi ===== */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* ===== Responsif untuk HP ===== */
+    @media (max-width: 600px) {
+      .logo-title img {
+        width: 45px;
+        height: 45px;
+      }
+      .logo-title h1 {
+        font-size: 18px;
+      }
+      nav ul {
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-title">
+      <img src="ChatGPT_Image_25_Sep_2025__17.48.29-removebg-preview.png" alt="Logo RPL">
+      <h1>REKAYASA PRANGKAT LUNAK</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <article>
+      <h2>Profil Kelas 12 RPL</h2>
+      <p>
+        Kelas 12 Rekayasa Perangkat Lunak (RPL) merupakan kelas yang berfokus pada pembelajaran
+        teknologi, khususnya pengembangan perangkat lunak. Kami terdiri dari siswa-siswi yang memiliki
+        semangat, kreativitas, dan kemampuan untuk beradaptasi dengan perkembangan teknologi modern.
+      </p>
+      <p>
+        Selain mempelajari dasar pemrograman, desain, dan basis data, kami juga mengembangkan soft skill
+        seperti kerja sama tim, komunikasi, dan problem solving. Kelas ini menjadi wadah untuk mencetak
+        generasi muda yang siap bersaing di dunia industri digital.
+      </p>
+    </article>
+
+    <section class="visi-misi">
+      <div class="card">
+        <h3>Visi</h3>
+        <p>
+          Menjadi kelas yang unggul dalam bidang teknologi, berkarakter, dan berintegritas tinggi untuk
+          menghadapi era digital yang terus berkembang.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Misi</h3>
+        <p>1. Menguasai keterampilan pemrograman dan pengembangan perangkat lunak modern.</p>
+        <p>2. Menumbuhkan budaya kerja sama, disiplin, dan tanggung jawab.</p>
+        <p>3. Menghasilkan karya kreatif dan inovatif di bidang teknologi.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kelas 12 Rekayasa Perangkat Lunak | SMK BHAKTI NUSANTARA</p>
+  </footer>
+
+</body>
+</html>

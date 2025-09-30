@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeri Kegiatan Jurusan Rekayasa Perangkat Lunak SMK Bhakti Nusantara. Dokumentasi kegiatan, acara, dan momen kebersamaan.">
+  <title>Galeri - Jurusan RPL</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
+
+    body {
+      line-height: 1.6;
+      background-color: #E0F2FE;
+      color: #333;
+    }
+
+    header {
+      background-color: #3B82F6;
+      color: #fff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo-title { display: flex; align-items: center; gap: 15px; }
+    .logo-title img { width: 55px; height: 55px; background: #fff; padding: 5px; border-radius: 10px; }
+    .logo-title h1 { font-size: 22px; font-weight: bold; }
+
+    nav ul { display: flex; list-style: none; gap: 25px; }
+    nav a { color: #fff; font-weight: 500; }
+    nav a:hover { color: #dbeafe; }
+
+    main { padding: 40px 20px; max-width: 1200px; margin: auto; }
+    article { text-align: center; margin-bottom: 30px; }
+    article h2 { font-size: 26px; margin-bottom: 10px; color: #2563EB; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+    .card:hover { transform: translateY(-4px); transition: 0.3s; }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: opacity 0.6s ease-in-out;
+    }
+    .card h3 { margin: 15px 0 8px; color: #2563EB; }
+    .card p { color: #555; font-size: 0.95rem; }
+
+    .card button {
+      position: absolute;
+      top: 45%;
+      background: rgba(59,130,246,0.8);
+      color: white;
+      border: none;
+      font-size: 20px;
+      padding: 6px 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+    .card button:hover { background: #2563EB; }
+    .card .prev { left: 8px; }
+    .card .next { right: 8px; }
+
+    footer {
+      background: #3B82F6;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .logo-title img { width: 40px; height: 40px; }
+      .logo-title h1 { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-title">
+      <img src="ChatGPT_Image_25_Sep_2025__17.48.29-removebg-preview.png" alt="Logo RPL">
+      <h1>REKAYASA PRANGKAT LUNAK</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Galeri Kegiatan Kelas 12 RPL</h2>
+      <p>Beberapa momen kebersamaan, kunjungan industri, serta prestasi siswa-siswi RPL.</p>
+    </article>
+
+    <section class="gallery">
+      <div class="card">
+        <button class="prev" onclick="changeImage(this,-1)">&#10094;</button>
+        <img src="WhatsApp Image 2025-09-25 at 18.04.40_7cb4445b.jpg" alt="Kunjungan Industri Bali">
+        <button class="next" onclick="changeImage(this,1)">&#10095;</button>
+        <h3>Kunjungan Industri Bali</h3>
+        <p>Mempelajari industri sesuai bidang RPL.</p>
+      </div>
+      <div class="card">
+        <button class="prev" onclick="changeImage(this,-1)">&#10094;</button>
+        <img src="rdfd.jpg" alt="Class Meeting">
+        <button class="next" onclick="changeImage(this,1)">&#10095;</button>
+        <h3>Juara Class Meeting</h3>
+        <p>Prestasi siswa RPL dalam lomba antar kelas.</p>
+      </div>
+      <div class="card">
+        <button class="prev" onclick="changeImage(this,-1)">&#10094;</button>
+        <img src="ba.jpg" alt="Buka Puasa">
+        <button class="next" onclick="changeImage(this,1)">&#10095;</button>
+        <h3>Buka Puasa</h3>
+        <p>Kebersamaan siswa dan guru saat Ramadhan.</p>
+      </div>
+      <div class="card">
+        <button class="prev" onclick="changeImage(this,-1)">&#10094;</button>
+        <img src="ua.jpg" alt="Serkom">
+        <button class="next" onclick="changeImage(this,1)">&#10095;</button>
+        <h3>Serkom</h3>
+        <p>Ujian sertifikasi kompetensi siswa RPL.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SMK Bhakti Nusantara - Jurusan Rekayasa Perangkat Lunak</p>
+  </footer>
+
+  <script>
+    const images = {
+      0: ["WhatsApp Image 2025-09-25 at 18.04.40_7cb4445b.jpg", "ddddd.jpg", "rt.jpg","rl.jpg"],
+      1: ["rdfd.jpg", "rp.jpg","rshj.jpg","rssat.jpg"],
+      2: ["ba.jpg", "bb.jpg", "bc.jpg"],
+      3: ["ua.jpg", "ub.jpg","uc.jpg"]
+    };
+
+    let currentIndex = {0:0,1:0,2:0,3:0};
+
+    function changeImage(button, direction) {
+      const card = button.parentElement;
+      const img = card.querySelector("img");
+      const cardIndex = [...card.parentElement.children].indexOf(card);
+
+      currentIndex[cardIndex] += direction;
+      if (currentIndex[cardIndex] < 0) currentIndex[cardIndex] = images[cardIndex].length - 1;
+      if (currentIndex[cardIndex] >= images[cardIndex].length) currentIndex[cardIndex] = 0;
+
+      img.style.opacity = 0;
+      setTimeout(() => {
+        img.src = images[cardIndex][currentIndex[cardIndex]];
+        img.style.opacity = 1;
+      }, 300);
+    }
+  </script>
+</body>
+</html>
