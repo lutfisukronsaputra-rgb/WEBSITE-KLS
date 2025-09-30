@@ -364,6 +364,36 @@
         <h3>Kontak</h3>
         <p>Hubungi kami melalui email atau media sosial untuk informasi lebih lanjut.</p>
       </div>
+      <!-- Section Konten Lain -->
+<section id="konten-utama">
+  <h1>Selamat Datang di Website Kelas</h1>
+  <p>Konten utama di sini...</p>
+</section>
+
+<!-- Section Komentar -->
+<section id="komentar">
+  <h2>Berikan Komentar Anda</h2>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text" name="nama" placeholder="Nama" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="komentar" placeholder="Komentar" required></textarea>
+    <button type="submit">Kirim</button>
+  </form>
+  <p id="success-msg" style="display:none; color:green; margin-top:10px;">
+    Komentar berhasil dikirim!
+  </p>
+</section>
+
+<!-- Script konfirmasi -->
+<script>
+const form = document.querySelector('#komentar form');
+form.addEventListener('submit', function(e) {
+  setTimeout(() => {
+    document.getElementById('success-msg').style.display = 'block';
+  }, 500);
+});
+</script>
+
     </section>
 
     <!-- Form Komentar -->
@@ -386,3 +416,4 @@
 
 </body>
 </html>
+
